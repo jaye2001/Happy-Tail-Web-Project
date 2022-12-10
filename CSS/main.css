@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    width: auto;
+    height: auto;
+    
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.body{
+    background-image: url('Res/homebg.svg');
+
+    position: absolute;
+    width: auto;
+    height:auto;
+
+}
+
+
+
+
+
+
+.navbar {
+    position: absolute;
+    width: auto;
+    height: 69px;
+    left: 0px;
+    top: 3px;
+    text-align: right;
+
+background: rgba(220, 233, 240, 0.06);
+
+    
+}
+
+
+
+.navitems{
+    align-items: right;
+    justify-content: space-between;
+    display:flex;
+    text-align: right;
+
+}
+
+.navitems  li {
+    list-style-type:none;
+    display:inline-block;
+    list-style-type:none;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 1%;
+
+}
+
+
+
+.logo {
+    position: absolute;
+    width: 68px;
+    height: 62px;
+    left: 50px;
+    top: 5px;
+    border-radius: 176px;
+}
+
+.title{
+    position: absolute;
+width: 606px;
+height: 85px;
+left: -73px;
+top: 20px;
+
+font-family: 'McLaren';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.245em;
+
+color: #000000;
+}
+
+
+
+nav ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 250;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+
+
+    color: #000000;
+    text-decoration: none;
+    text-align: right;
+
+}
+
+nav a:hover {
+    background-color: #87acf6; 
+  }
+
+.home_h1{
+    position: absolute;
+    width: 550px;
+    height: 80px;
+    top: 163px;
+    left: 35%;
+
+    
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.245em;
+    
+    color: #000000;
+}
+
+
+ 
+
+.hmdg2{
+    position: absolute;
+width: 401px;
+height: 502px;
+left: 136px;
+top: 1124px;
+
+}
+
+.footer1{
+    position: absolute;
+width: 1438px;
+height: 280px;
+left: 1px;
+top: 1802px;
+
+background: #151E2D;
+backdrop-filter: blur(50px);
+}
+
+.footer1 li{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 397px;
+    justify-content: space-between;
+
+    list-style-type:none;
+    display:inline-block;
+    list-style-type:none;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.06em
+}
+
+.footer2{
+    position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 2082px;
+
+background: rgba(27, 27, 27, 0.96);
+}
+
+.footer2 p{
+    position: absolute;
+font-family: 'Maitree';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 0.245em;
+
+color: #FFFFFF;
+}
