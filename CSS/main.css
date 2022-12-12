@@ -100,7 +100,7 @@ color: #000000;
 
 }
 
-nav a:hover {
+.navitems a:hover {
     background-color: #cec5ce; 
   }
 
@@ -145,18 +145,21 @@ background: #151E2D;
 backdrop-filter: blur(50px);
 }
 
-.footer1 li{
+.footitems li{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
+    align-items:flex-start;
+    padding: 20px;
     gap: 397px;
     justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+
 
     list-style-type:none;
     display:inline-block;
     list-style-type:none;
-    text-align: center;
+    text-align:justify;
     color: #FFFFFF;
     letter-spacing: 0.06em
 }
