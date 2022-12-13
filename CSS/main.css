@@ -104,7 +104,15 @@ color: #000000;
     background-color: #cec5ce; 
   }
 
-.home_h1{
+
+
+.slider {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .home_h1{
     position: absolute;
     width: 550px;
     height: 80px;
@@ -122,13 +130,6 @@ color: #000000;
     
     color: #000000;
 }
-
-.slider {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
-
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -176,10 +177,10 @@ color: #000000;
 
 .hmdg2{
     position: absolute;
-width: 401px;
-height: 502px;
-left: 136px;
-top: 1124px;
+      width: 401px;
+      height: 502px;
+      left: 136px;
+      top: 1124px;
 
 }
 
@@ -211,6 +212,64 @@ backdrop-filter: blur(50px);
     color: #FFFFFF;
     letter-spacing: 0.06em
 }
+
+.quicklinks{
+   display: flex;
+   flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 13px;
+
+  margin-left: 14%;
+  margin-right: 9%;
+  margin-bottom: %;
+
+  font-family: 'Maitree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.245em;
+
+  list-style-type:none;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ourservices{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 15px;
+    gap: 20px;
+
+
+
+
+    font-family: 'Maitree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.245em;
+    list-style-type:none;
+
+  
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+
+
+
+}
+
+
+
+
 
 .footer2{
     position: absolute;
