@@ -237,8 +237,7 @@ backdrop-filter: blur(50px);
   list-style-type:none;
   
   color: #FFFFFF;
-  
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .ourservices{
@@ -259,12 +258,7 @@ backdrop-filter: blur(50px);
     text-align: center;
     letter-spacing: 0.245em;
     list-style-type:none;
-
-  
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-
+    color: #FFFFFF;
 
 
 }
