@@ -8,24 +8,12 @@
     background-attachment: fixed;
 }
 
-.body{
-    background-image: url('/Res/homebg.svg');
-
-    position: absolute;
-    width: auto;
-    height:auto;
-
-}
-
-
-
-
 
 
 .navbar {
     position: absolute;
     width: 100%;
-    height: 69px;
+    max-height: 15%;
     left: 0px;
     top: 3px;
 
@@ -55,7 +43,7 @@ background: rgba(220, 233, 240, 0.06);
     margin-right: 5%;
     margin-top: 1.5%;
 
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -77,20 +65,20 @@ background: rgba(220, 233, 240, 0.06);
 
 .title{
     position: absolute;
-width: 606px;
-height: 85px;
-left: -73px;
-top: 20px;
+    width: 606px;
+    height: 85px;
+    left: -73px;
+    top: 20px;
 
-font-family: 'McLaren';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.245em;
+    font-family: 'McLaren', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.245em;
 
-color: #000000;
+    color: #000000;
 }
 
 
@@ -108,11 +96,17 @@ color: #000000;
 
 
 .slider {
-    max-width: 100%;
-    position: relative;
+    width: 100%;
+    height: 650px;
+    /* position: relative; */
     margin: auto;
     margin-top: 1.5%;
   }
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
 
   .home_h1{
     position: absolute;
@@ -122,7 +116,7 @@ color: #000000;
     left: 35%;
 
     
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -135,7 +129,7 @@ color: #000000;
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 350%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
@@ -154,6 +148,10 @@ color: #000000;
   
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot-container {
+    text-align: center;
   }
   
   .dot {
@@ -188,12 +186,13 @@ color: #000000;
 
 .footer1{
     position: absolute;
-width: 100%;
-height: 280px;
-top: 1802px;
+    display: flex;
+    width: 100%;
+    height: 280px;
+    top: 2220px;
 
-background: #151E2D;
-backdrop-filter: blur(50px);
+    background: #151E2D;
+    backdrop-filter: blur(50px);
 }
 
 .footitems li{
@@ -215,28 +214,57 @@ backdrop-filter: blur(50px);
     letter-spacing: 0.06em
 }
 
-.quicklinks{
-   display: flex;
-   flex-direction: column;
-  align-items: flex-start;
-  padding: 15px;
-  gap: 13px;
+.list-header {
+  list-style-type:none;
+  display:inline-block;
+  list-style-type:none;
+  text-align:justify;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  margin-bottom: 5%;
+}
 
-  margin-left: 14%;
-  margin-right: 9%;
-  margin-bottom: %;
-
-  font-family: 'Maitree';
+.list-item {
+  font-family: 'Maitree', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.245em;
 
   list-style-type:none;
   
   color: #FFFFFF;
+}
+
+.list {
+  width: 100%;
+  margin-left: 14%;
+}
+
+.quicklinks{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    padding: 15px;
+    gap: 13px;
+
+    margin-left: 14%;
+    /* margin-right: 9%; */
+
+    font-family: 'Maitree', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.245em;
+
+    list-style-type:none;
+    
+    color: #FFFFFF;
 
 }
 
@@ -250,7 +278,7 @@ backdrop-filter: blur(50px);
 
 
 
-    font-family: 'Maitree';
+    font-family: 'Maitree', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -269,17 +297,17 @@ backdrop-filter: blur(50px);
 
 .footer2{
     position: absolute;
-width: 100%;
-height: 100px;
-left: 0px;
-top: 2082px;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 2500px;
 
-background: rgba(27, 27, 27, 0.96);
+    background: rgba(27, 27, 27, 0.96);
 }
 
 .footer2 p{
     position: absolute;
-    font-family: 'Maitree';
+    font-family: 'Maitree', serif;
     font-style: normal;
     font-weight: 100;
     font-size: 14px;
@@ -295,4 +323,79 @@ color: #FFFFFF;
 .footer2 p a{
     text-decoration: none;
     color:#ffffff;
+}
+
+.simg1{
+  max-width: 100%;
+  margin-top: 1.5%;
+  /* height: auto; */
+  overflow: hidden;
+}
+
+.simg1 img {
+  width: 100%;
+  /* height: 100%; */
+  margin-top: -40%;
+}
+
+.simg2{
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.simg2 img {
+  width: 105%;
+  height: 100%;
+  margin: -10px -5px 0px -10px
+}
+
+.imgnsbm{
+  position: relative;
+  align-items: center;
+/* width: 80%; */
+/* height: 85px; */
+/* left: 252px; */
+  margin-top: 10%;
+
+}
+
+.imgnsbm img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.header2{
+  position: absolute;
+width:100%;
+height: 80px;
+left: 0px;
+top: 79px;
+
+background: rgba(60, 100, 108, 0.78);
+}
+
+.header2 p{
+  position: absolute;
+  width: 846px;
+  height: 25px;
+  left: 450px;
+  margin-top: 2%;
+  color: #FFFFFF;
+}
+
+.DonationHeader2{
+  position: absolute;
+  width: 100%;
+  height: 252px;
+  left: 3px;
+  margin-top:1.5%;
+}
+
+.DonationHeader2 img{
+  width:100%;
+  height:252px;
 }
