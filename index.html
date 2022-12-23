@@ -24,159 +24,235 @@
 
     </head>
     <body>
-        <div class="navbar-j">
-            <div class="wrapper-j">
-            <nav>
-                    <div class="logo">
+        <div class="wrapper">
+           <div class="container-sm">
+            
+                <!-- <div class="navbar-j">
+                    <div class="wrapper-j">
+                    <nav>
+                            <div class="logo">
+                                <a href="index.html"><img src="Res/logodog.png" class="logo" alt="Logo"></a>
+                                <a href="index.html"><div class="title">Happy Tails</div></a>
+                                
+                            </div>
+
+                            <ul class="navitems-j">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">SERVICES</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">ABOUT US</a>
+                                </li>
+                                <li>
+                                    <a href="donation.html">DONATION</a>
+                                </li>
+                                <li>
+                                    <a href="project.html">PROJECT</a>
+                                </li>
+
+                            </ul>
+                    </nav>
+                </div> -->
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active"  id="slide-img">
+                        <img class="d-block w-100" src="Res/slide1.svg" alt="First slide">
+                    </div>
+                    <div class="carousel-item" id="slide-img">
+                        <img class="d-block w-100"  src="Res/slide2.svg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item"  id="slide-img">
+                        <img class="d-block w-100" src="Res/slide3.svg" alt="Third slide">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-j">
+                    <div class="navbar-brand">
+                        <!-- <div class="logo">
+                            <a href="index.html"><img src="Res/logodog.png" class="logo" alt="Logo"></a>
+                            <a href="index.html"><div class="title">Happy Tails</div></a>
+                            
+                        </div> -->
+
+                    </div>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donation.html">DONATION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html">PROJECT</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
                         <a href="index.html"><img src="Res/logodog.png" class="logo" alt="Logo"></a>
                         <a href="index.html"><div class="title">Happy Tails</div></a>
-                        
+                    </span>
+                    </div>
+                </nav>
+
+            
+
+                <!-- <div class="slider-j">
+
+                    <div class="home_h1"><h1>Welcome to Happy Tails</h1></div>
+
+                    <div class="slide-j">
+                        <img src="Res/slide1.svg" class="slide-image">
+                    </div>
+                
+                    <div class="slide-j">
+                        <img src="Res/slide2.svg" class="slide-image">
+                    </div>
+                
+                    <div class="slide-j">
+                        <img src="Res/slide3.svg" class="slide-image">
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slide-j");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+                </script> -->
+
+             <div class="container-sm">
+
+                <img src="Res/hmdg2.svg" class="hmdg2" alt="puppy">
+                <h4 class="home-h4">What is HAPPY TAIL?</h4>
+                <p class="home-para">Happy tail is an organization committed to regulating the population and eliminating rabies through nationwide sterilization and vaccination programs, while also enhancing the welfare of street dogs through its rescue and rehoming operations. Although we do our best to reach as many peoples as we can in other regions, the majority of care for the injured are concentrated in the Sri Lank province. Happy Tail has been at the Vanguard, influencing animal legislation and playing a crucial part in significantly improving the lives of both people and animals.</p>
+             </div>
+
+                <div class="container-sm">
+                    <div class="footer1">
+                        <ul class="list">
+                            <li class="list-header">
+                                QUICK LINKS
+                            </li>
+                            <li class="list-item">
+                                Home
+                            </li>
+                            <li class="list-item">
+                                Blog
+                            </li>
+                            <li class="list-item">
+                                Services
+                            </li>
+                            <li class="list-item">
+                                Donation
+                            </li>
+                            <li class="list-item">
+                                About Us
+                            </li>
+                            <li class="list-item">
+                                Project
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-header">
+                                OUR SERVICES
+                            </li>
+                            <li class="list-item">
+                                Generate a name
+                            </li>
+                            <li class="list-item">
+                                Find a Doctor
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="list-header">
+                                SOCIAL MEDIA
+                            </li>
+                            <li class="list-item">
+                                FaceBook
+                            </li>
+                            <li class="list-item">
+                                Instagram
+                            </li>
+                            <li class="list-item">
+                                Project
+                            </li>
+                        </ul>
+
+
                     </div>
 
-                    <ul class="navitems-j">
-                        <li>
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">BLOG</a>
-                        </li>
-                        <li>
-                            <a href="services.html">SERVICES</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT US</a>
-                        </li>
-                        <li>
-                            <a href="donation.html">DONATION</a>
-                        </li>
-                        <li>
-                            <a href="project.html">PROJECT</a>
-                        </li>
-
-                    </ul>
-            </nav>
-        </div>
-
-
-    
-
-        <div class="slider-j">
-
-            <div class="home_h1"><h1>Welcome to Happy Tails</h1></div>
-
-            <div class="slide-j">
-                <img src="Res/slide1.svg" class="slide-image">
-            </div>
-        
-            <div class="slide-j">
-                <img src="Res/slide2.svg" class="slide-image">
-            </div>
-        
-            <div class="slide-j">
-                <img src="Res/slide3.svg" class="slide-image">
-            </div>
-        
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide-j");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-        </script>
-
-        <img src="Res/hmdg2.svg" class="hmdg2" alt="puppy">
-
-
-        <div class="footer-main">
-            <div class="footer1">
-                <ul class="list">
-                    <li class="list-header">
-                        QUICK LINKS
-                    </li>
-                    <li class="list-item">
-                        Home
-                    </li>
-                    <li class="list-item">
-                        Blog
-                    </li>
-                    <li class="list-item">
-                        Services
-                    </li>
-                    <li class="list-item">
-                        Donation
-                    </li>
-                    <li class="list-item">
-                        About Us
-                    </li>
-                    <li class="list-item">
-                        Project
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-header">
-                        OUR SERVICES
-                    </li>
-                    <li class="list-item">
-                        Generate a name
-                    </li>
-                    <li class="list-item">
-                        Find a Doctor
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-header">
-                        SOCIAL MEDIA
-                    </li>
-                    <li class="list-item">
-                        FaceBook
-                    </li>
-                    <li class="list-item">
-                        Instagram
-                    </li>
-                    <li class="list-item">
-                        Project
-                    </li>
-                </ul>
-
-
-            </div>
-
-            <div class="footer2">
-                <p> © COPYRIGHT 2023. ALL RIGHT RESERVED <br> Team SURGE Students of <a href="https://www.nsbm.ac.lk/">NSBM</a></p>
-            </div>
+                    <div class="footer2">
+                        <p> © COPYRIGHT 2023. ALL RIGHT RESERVED <br> Team SURGE Students of <a href="https://www.nsbm.ac.lk/">NSBM</a></p>
+                    </div>
+                </div>
         </div>
     </body>
 
